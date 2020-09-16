@@ -1,5 +1,5 @@
 # /node_modules ignoriert den Ordner komplett, da wir dort nichts ändern müssen wir ihn nicht auf github haben. Wenn ihr das Projekt von Github holt, mit npm install die nodemodules neu installieren
-/node_modules
+node_modules
 
 # .env hier speichern wir zB unseren API-Key, damit er nicht auf github sichtbar ist
 .env

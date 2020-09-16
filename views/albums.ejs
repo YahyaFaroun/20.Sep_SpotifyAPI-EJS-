@@ -2,22 +2,19 @@
 
 <body>
     <%- include('./partials/header.ejs') %>
-    <main id="mainAlbums">
+    <main>
         <section class="boxes">
-            <%results.forEach(elt=>{%>
+            <%albumsData.forEach(elt=>{%>
             <article> <% if (elt.images.length!=0) { %>
                 <img src="<%=elt.images[0].url%>" alt=“”>
                 <% } %>
                 <div>
                     <h1><%=elt.name%> </h1>
-                    <a class="btn" href=“/viewAlbums/<%=elt.id%>“>View Album</a>
+                    <a class="btn" href=“/tracks/<%=elt.id%>“>View Tracks</a>
                 </div>
             </article>
             <%})%>
         </section>
     </main>
-
+    <%- include('./partials/footer.ejs') %>
 </body>
-
-
-<%- include('./partials/footer.ejs') %>

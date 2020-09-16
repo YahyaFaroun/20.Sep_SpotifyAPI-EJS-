@@ -1,0 +1,20 @@
+<%- include('./partials/head.ejs') %>
+
+<body>
+    <%- include('./partials/header.ejs') %>
+    <main id="mainAlbums">
+        <section class="boxes">
+            <%results.forEach(elt=>{%>
+            <article> <% if (elt.images.length!=0) { %>
+                <img src="<%=elt.images[0].url%>" alt=“”>
+                <% } %>
+                <div>
+                    <h1><%=elt.name%> </h1>
+                    <a class="btn" href=“/viewAlbums/<%=elt.id%>“>View Album</a>
+                </div>
+            </article>
+            <%})%>
+        </section>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+</body>
