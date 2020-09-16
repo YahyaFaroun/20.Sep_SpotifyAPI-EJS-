@@ -12,7 +12,7 @@ var spotifyApi = new SpotifyWebApi({
 });
 
 
-app.listen(process.env.PORT, () => console.log('Listening at 5003'))
+app.listen(5003, () => console.log('Listening at 5003'))
 
 
 spotifyApi
