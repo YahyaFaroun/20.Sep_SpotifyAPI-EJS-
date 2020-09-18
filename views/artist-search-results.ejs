@@ -2,15 +2,17 @@
 
 <body>
     <%- include('./partials/header.ejs') %>
-    <main id="mainAlbums">
+    <main class="main">
         <section class="boxes">
-            <%results.forEach(elt=>{%>
-            <article> <% if (elt.images.length!=0) { %>
-                <img src="<%=elt.images[0].url%>" alt=“”>
+            <%artistData.forEach(element=>{%>
+            <article class="articles"> <% if (element.images.length!=0) { %>
+                <img src="<%=element.images[0].url%>" alt=“”>
+                <% } else{ %>
+                <img src="/img/emptyImg.svg" alt="">
                 <% } %>
                 <div>
-                    <h1><%=elt.name%> </h1>
-                    <a class="btn" href=“/viewAlbums/<%=elt.id%>“>View Album</a>
+                    <h1><%=element.name%> </h1>
+                    <a class="btn" href="/albums/<%=element.id%>">View Album</a>
                 </div>
             </article>
             <%})%>

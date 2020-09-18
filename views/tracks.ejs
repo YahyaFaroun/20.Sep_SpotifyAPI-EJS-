@@ -2,8 +2,8 @@
 
 <body>
     <%- include('./partials/header.ejs') %>
-    <main>
-        <section class="search-container">
+    <main class="main">
+        <section id="player">
             <% tracksData.forEach(element => { %>
             <div>
                 <h3><%= element.name %> </h3>

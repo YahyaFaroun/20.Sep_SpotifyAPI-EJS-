@@ -28,13 +28,17 @@ h1{
     grid-template-columns: repeat(3, 1fr);
     gap: 50px 10%;
 }
+.articles{
+    display: grid;
+    grid-template-rows: 280px 80px;
+}
 .boxes div{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     background-color: #494949;
-    height: 15vh;
+    height: 100%;
 }
 
 
@@ -54,7 +58,6 @@ h1{
     height: 245px;    
     background: rgba(255, 255, 255, 0.733);
 }
-
 #main form input:first-of-type{
     width: 426px;
     height: 30px;
@@ -67,16 +70,35 @@ h1{
 }
 
 
-#mainAlbums{
+.main{
     background-color: #232424; 
     padding: 5vh 10%;
 }
-#mainAlbums img{
+.main img{
     width: 100%;
     height: 100%;
 }
 
 
+#player{
+    
+}
+#player div{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;    
+
+    width: 1120px;
+    height: 77px;
+    background: #494949;
+    margin-bottom: 20px;
+}
+#player h3{
+    font-family: Roboto;
+    color: #FFFFFF;
+    font-weight: normal;
+    padding-left: 20px;
+}
 footer nav{
     display: flex;
     justify-content: flex-end;
